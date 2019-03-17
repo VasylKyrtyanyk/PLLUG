@@ -11,6 +11,7 @@ namespace PLLUG
 		public static Refrigerator InputDataRef()
 		{
 			Refrigerator _ref = new Refrigerator();
+
 			Console.Write("Enter size refrigerator:  Height =  ");
 			_ref.Height = Convert.ToDouble(Console.ReadLine());
 			Console.Write(" Width = ");
@@ -20,7 +21,7 @@ namespace PLLUG
 			return _ref;
 		}
 
-		public static SipmleDoor InputDataDoor()
+		public static ISubject InputDataDoor()
 		{
 			Console.WriteLine("Data Door");
 			double width, height;
@@ -28,12 +29,14 @@ namespace PLLUG
 			width = Convert.ToDouble(Console.ReadLine());
 			Console.Write(" Height = ");
 			height = Convert.ToDouble(Console.ReadLine());
+
 			return new SipmleDoor(width,height);
 		}
 
-		public static Oculus InputDataOculus()
+		public static ISubject InputDataOculus()
 		{
 			Console.WriteLine("Data Oculus");
+
 			return new Oculus(Convert.ToDouble(Console.ReadLine()));
 		}
 	}
