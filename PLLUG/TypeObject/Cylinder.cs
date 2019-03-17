@@ -2,8 +2,13 @@
 {
 	public class Cylinder
 	{
-		public double Height { get; }
-		public double Diameter { get; }
+		public double Height { get; set; }
+		public double Diameter { get; set; }
+
+		public Cylinder()
+		{
+
+		}
 
 		public Cylinder(double height, double diameter)
 		{

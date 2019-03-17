@@ -21,6 +21,16 @@ namespace PLLUG
 			return _ref;
 		}
 
+		public static Cylinder InputDataCyl()
+		{
+			Cylinder _cylinder = new Cylinder();
+			Console.Write("Enter size cylinder:  Height =  ");
+			_cylinder.Height = Convert.ToDouble(Console.ReadLine());
+			Console.Write(" Diameter = ");
+			_cylinder.Diameter = Convert.ToDouble(Console.ReadLine());
+			return _cylinder;
+		}
+
 		public static ISubject InputDataDoor()
 		{
 			Console.WriteLine("Data Door");
