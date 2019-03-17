@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cylinder.cs" />
     <Compile Include="HelperRead.cs" />
     <Compile Include="Oculus.cs" />
     <Compile Include="Program.cs" />
