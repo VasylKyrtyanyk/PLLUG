@@ -8,7 +8,7 @@ namespace PLLUG.TypeObject
 {
 	public class Sphere
 	{
-		private double Diameter { get; set; }
+		public double Diameter { get; set; }
 
 		public Sphere(double diameter)
 		{

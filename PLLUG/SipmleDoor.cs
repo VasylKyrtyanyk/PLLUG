@@ -28,5 +28,37 @@
 				return false;
 			}	
 		}
+
+		public bool MoveSphere()
+		{
+			var sphere = HelperRead.InputDataSphere();
+
+			if (this._height > sphere.Diameter && this._width > sphere.Diameter)
+			{
+				return true;
+			}
+
+			return false;
+		}
+
+		public bool MoveCylinder()
+		{
+			var cyl = HelperRead.InputDataCyl();
+
+			if (this._height > cyl.Height && this._width > cyl.Diameter)
+			{
+				return true;
+			}
+			else if (this._height > cyl.Diameter && this._width > cyl.Diameter)
+			{
+				return true;
+			}
+			else if (this._width > cyl.Height && this._height > cyl.Diameter)
+			{
+				return true;
+			}
+
+			return false;
+		}
 	}
 }
