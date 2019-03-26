@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PLLUG.Services;
 
 namespace PLLUG
 {
@@ -10,10 +11,7 @@ namespace PLLUG
 	{
 		static void Main(string[] args)
 		{
-			//var _obj = HelperRead.InputDataDoor();
-			//_obj.MoveRef();
-			var obj = HelperRead.InputDataOculus();
-			Console.WriteLine(obj.MoveRef());
+			Menu.ConsoleSelect();
 			Console.ReadKey();
 		}
 	}

@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Services\Menu.cs" />
     <Compile Include="TypeObject\Cylinder.cs" />
     <Compile Include="Services\HelperRead.cs" />
     <Compile Include="Oculus.cs" />
