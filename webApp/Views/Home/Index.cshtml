@@ -1,0 +1,30 @@
+﻿@*@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form style =" padding: 100px">
+	<p><input type="text" name="login" /></p>
+	<p><input type="password" name="password" /></p>
+	<input type="submit" value="Login" />
+</form>*@
+
+
+@model IEnumerable<webApp.Models.User>
+@{
+	//ViewBag.Title = "All users";
+	ViewData["Title"] = "Home Page";
+}
+<a asp-action="Create" style="padding: 200px">Add user</a>
+
+<table  class="table">
+	@foreach (var item in Model)
+	{
+		<tr>
+			<td>@item.Name</td>
+			<td><a asp-action="Details" asp-controller="Home" asp-route-id="@item.Id">Details</a> | 
+				<a asp-action="Edit" asp-controller="Home" asp-route-id="@item.Id">Edit</a> | 
+				@*<a asp-action="Delete" asp-controller="Home" asp-route-id="@item.Id">Удалить</a>*@
+			</td>
+		</tr>
+	}
+</table>
